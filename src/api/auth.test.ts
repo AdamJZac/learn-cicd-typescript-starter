@@ -1,7 +1,7 @@
 import { IncomingHttpHeaders } from "http";
 import { describe, expect, test } from "vitest";
 
-const validHeader: IncomingHttpHeaders = {authorization: "apiKey123"};
+const validHeader: IncomingHttpHeaders = { authorization: "apiKey123" };
 const invalidHeader: IncomingHttpHeaders = {};
 
 describe("header", () => {
