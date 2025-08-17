@@ -13,7 +13,7 @@ describe("header", () => {
   });
 
   test("Valid header has API key", () => {
-    expect(validHeader["authorization"]?.length).toBeFalsy();
+    expect(validHeader["authorization"]?.length).toBeTruthy();
   });
   test("Invalid header has no API key", () => {
     expect(invalidHeader["authorization"]?.length).toBeFalsy();
