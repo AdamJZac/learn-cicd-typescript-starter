@@ -7,6 +7,7 @@ import { middlewareAuth } from "./api/middleware.js";
 import { handlerReadiness } from "./api/readiness.js";
 import { handlerNotesCreate, handlerNotesGet } from "./api/notes.js";
 import { handlerUsersCreate, handlerUsersGet } from "./api/users.js";
+import process from "process";
 
 const __dirname = path.resolve();
 
@@ -17,6 +18,11 @@ if (!config.api.port) {
 
 const app = express();
 app.use(express.json());
+
+function unused() {
+  // this function does nothing
+  // and is called nowhere
+}
 
 app.use(
   cors({
