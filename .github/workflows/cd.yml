@@ -27,8 +27,8 @@ jobs:
             - name: Build App
               run: npm run build
 
-            - name: Run Migration
-              run: npm run db:migrate
+            #- name: Run Migration
+            # run: npm run db:migrate
 
 
            # - id: 'auth'
