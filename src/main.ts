@@ -8,6 +8,7 @@ import { handlerReadiness } from "./api/readiness.js";
 import { handlerNotesCreate, handlerNotesGet } from "./api/notes.js";
 import { handlerUsersCreate, handlerUsersGet } from "./api/users.js";
 import process from "process";
+import { Request, Response, NextFunction } from "express";
 
 const __dirname = path.resolve();
 
